@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   description:
     "The UK's most trusted betting site comparison. Expert-reviewed bookmakers, verified bonuses, and UKGC-licensed operators ranked by our editorial team.",
   keywords:
-    "trusted UK betting sites, best bookmakers UK, online betting UK, football betting, Premier League betting, UK gambling sites 2025, trustedukbettinglist",
+    "trusted UK betting sites, best bookmakers UK, online betting UK, football betting, Premier League betting, UK gambling sites 2026, trustedukbettinglist",
 }
 
 export const viewport: Viewport = {
