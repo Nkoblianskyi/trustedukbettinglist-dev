@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .text-pretty {
+    text-wrap: pretty;
+  }
+}
+
+/* TrustedUKBettingList — Forest Green / Emerald theme */
+@layer base {
+  :root {
+    --font-sans: var(--font-inter);
+    --font-serif: var(--font-sora);
+
+    /* Core */
+    --background: 0 0% 97%;
+    --foreground: 157 45% 9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 157 45% 9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 157 45% 9%;
+
+    /* Brand: deep forest green */
+    --primary: 157 50% 13%;
+    --primary-foreground: 0 0% 98%;
+
+    /* Sage secondary */
+    --secondary: 152 22% 93%;
+    --secondary-foreground: 157 50% 13%;
+
+    --muted: 152 14% 91%;
+    --muted-foreground: 152 10% 42%;
+
+    /* Emerald accent */
+    --accent: 152 58% 40%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 152 14% 85%;
+    --input: 152 14% 85%;
+    --ring: 152 58% 40%;
+
+    --radius: 0.375rem;
+
+    /* Custom tokens */
+    --forest: 157 50% 13%;
+    --forest-mid: 157 42% 18%;
+    --forest-light: 157 35% 26%;
+    --emerald: 152 58% 40%;
+    --emerald-light: 152 52% 55%;
+    --sage: 152 18% 92%;
+  }
+
+  .dark {
+    --background: 157 48% 7%;
+    --foreground: 0 0% 95%;
+    --card: 157 42% 11%;
+    --card-foreground: 0 0% 95%;
+    --popover: 157 42% 11%;
+    --popover-foreground: 0 0% 95%;
+    --primary: 152 58% 40%;
+    --primary-foreground: 157 48% 7%;
+    --secondary: 157 35% 16%;
+    --secondary-foreground: 0 0% 95%;
+    --muted: 157 28% 18%;
+    --muted-foreground: 152 15% 58%;
+    --accent: 152 58% 40%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 63% 35%;
+    --destructive-foreground: 0 0% 95%;
+    --border: 157 28% 20%;
+    --input: 157 28% 20%;
+    --ring: 152 58% 40%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    @apply bg-background;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+}
+
+/* Decorative rule */
+.rule-emerald {
+  height: 2px;
+  background: linear-gradient(to right, transparent, hsl(var(--emerald)), transparent);
+}
+
+/* Animations */
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes fade-in-up {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slide-up {
+  from { transform: translateY(100%); }
+  to   { transform: translateY(0); }
+}
+
+@keyframes scale-in {
+  from { opacity: 0; transform: scale(0.96); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+.animate-fade-in      { animation: fade-in      0.6s ease-out both; }
+.animate-fade-in-up   { animation: fade-in-up   0.6s ease-out both; }
+.animate-slide-up     { animation: slide-up     0.4s ease-out both; }
+.animate-scale-in     { animation: scale-in     0.3s ease-out both; }
