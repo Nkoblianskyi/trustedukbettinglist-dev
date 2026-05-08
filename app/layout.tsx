@@ -18,7 +18,7 @@ const sora = Sora({
 })
 
 export const metadata: Metadata = {
-  title: "TrustedUKBettingList | Best UK Betting Sites 2025 | trustedukbettinglist.com",
+  title: "TrustedUKBettingList | Best UK Betting Sites 2026 | trustedukbettinglist.com",
   description:
     "The UK's most trusted betting site comparison. Expert-reviewed bookmakers, verified bonuses, and UKGC-licensed operators ranked by our editorial team.",
   keywords:
